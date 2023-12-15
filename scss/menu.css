@@ -1,9 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.header__container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff0ed;
+  height: 5rem;
+}
+
+.left__container {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.nav__title {
+  font-weight: 300;
+  font-size: 3rem;
+  opacity: 0.7;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav__item {
+  margin-left: 2rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav img {
+  width: 3rem;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+  margin-top: 1.25rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.nav__item--current a {
+  color: #5bacc3;
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-top: 1.25rem;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
 h1 {
   color: white;
   font-weight: 300;
   font-size: 3.75em;
   margin-top: 0.8em;
 }
+
 .img__container {
   position: relative;
   display: inline-block;
@@ -28,6 +94,7 @@ h1 {
   color: white;
   padding: 10px;
 }
+
 .img__title::before {
   content: "";
   position: absolute;
@@ -42,10 +109,12 @@ h1 {
 h2 {
   font-weight: 300;
 }
+
 h3 {
   font-weight: 300;
   text-align: center;
 }
+
 .bg__title {
   font-size: 10rem;
   background-color: white;
@@ -66,10 +135,12 @@ ul.bg-color-hightlight {
   justify-content: center;
   text-align: center;
 }
+
 ul.bg-color-hightlight li {
   list-style-type: none !important;
   display: inline-block;
 }
+
 ul.bg-color-hightlight li a {
   color: white !important;
   text-decoration: none !important;
@@ -78,15 +149,18 @@ ul.bg-color-hightlight li a {
   font-weight: 300;
   margin-right: 1.25rem;
 }
+
 .special__content {
   color: #5bacc3;
   margin-right: 1.25rem;
 }
+
 #hot-drinks,
 #cold-drinks,
 #pastries {
   text-align: center;
 }
+
 #hot-drinks h2,
 #cold-drinks h2,
 #pastries h2 {
@@ -110,28 +184,33 @@ aside {
   font-size: 1.1rem;
   font-weight: 300;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .container h3 {
   font-size: 2em;
   margin-top: -0.1em;
   opacity: 0.7;
   font-weight: 300;
 }
+
 .container__content {
   font-size: 1.1em;
   font-weight: 400;
   opacity: 0.7;
 }
+
 .container_price {
   text-align: center;
   margin-top: 0.5em;
   color: #5bacc3;
   font-size: 1.1em;
 }
+
 /* #hot-drinks,
 #pastries {
   background-color: #fff0ed;
@@ -142,6 +221,7 @@ aside {
 main section:nth-child(odd) {
   background-color: #fff0ed;
 }
+
 main section:nth-child(2n) {
   background-color: #f7f7f7;
-}
+}/*# sourceMappingURL=menu.css.map */
