@@ -122,8 +122,12 @@ h2 {
   z-index: 999;
 }
 
-button:hover {
+.card__button:hover::before {
   cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -0.1rem;
+  bottom: -0.1rem;
 }
 
 .card__img {
@@ -256,6 +260,14 @@ button:hover {
   z-index: 999;
 }
 
+.intro__button:hover::before {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -0.1rem;
+  bottom: -0.1rem;
+}
+
 .intro__img {
   width: 3.13rem;
   /* margin-right:2rem; */
@@ -263,6 +275,7 @@ button:hover {
 
 .right__img {
   height: 17.5rem;
+  transition: transform 0.2s;
 }
 
 .right__container {
@@ -288,6 +301,28 @@ button:hover {
   bottom: 1.25rem;
   border: 5px solid #5bacc3;
   z-index: 999;
+}
+
+@-webkit-keyframes chameleon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes chameleon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.right__container:hover .right__img {
+  -webkit-animation: chameleon 2.5s infinite linear;
+          animation: chameleon 2.5s infinite linear;
 }
 
 .specialproduct {

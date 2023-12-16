@@ -41,6 +41,7 @@ h2 {
   width: 11.25rem;
   top: 1rem;
 }
+
 .card__button::before {
   content: "";
   position: absolute;
@@ -51,8 +52,12 @@ h2 {
   border: 2px solid black;
   z-index: 999;
 }
-button:hover {
+.card__button:hover::before {
   cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -0.1rem;
+  bottom: -0.1rem;
 }
 .card__img {
   display: inline;
@@ -168,6 +173,13 @@ button:hover {
   border: 2px solid black;
   z-index: 999;
 }
+.intro__button:hover::before {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -0.1rem;
+  bottom: -0.1rem;
+}
 
 .intro__img {
   width: 3.13rem;
@@ -175,6 +187,7 @@ button:hover {
 }
 .right__img {
   height: 17.5rem;
+  transition: transform 0.2s;
 }
 .right__container {
   background-image: url("../assets/image/coldbrewbackground.png");
@@ -198,6 +211,19 @@ button:hover {
   bottom: 1.25rem;
   border: 5px solid #5bacc3;
   z-index: 999;
+}
+@keyframes chameleon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.right__container:hover .right__img {
+  animation: chameleon 2.5s infinite linear;
 }
 
 .specialproduct {
