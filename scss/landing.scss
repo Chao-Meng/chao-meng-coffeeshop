@@ -183,7 +183,6 @@ h2 {
 
 .intro__img {
   width: 3.13rem;
-  /* margin-right:2rem; */
 }
 .right__img {
   height: 17.5rem;
@@ -212,11 +211,11 @@ h2 {
   border: 5px solid #5bacc3;
   z-index: 999;
 }
+
 @keyframes chameleon {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
